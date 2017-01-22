@@ -16,13 +16,13 @@ public class P1 {
             //should catch DuplicateSymException
         }
         catch(NullPointerException n){
-            System.out.println("rcaught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
         catch (DuplicateSymException dup){
-            System.out.println("caught an DuplicateSymException Error");
+            System.out.println("caught a DuplicateSymException");
         }
 
 
@@ -33,14 +33,15 @@ public class P1 {
             //should catch NullPointerException
         }
         catch(NullPointerException n){
-            System.out.println("caught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
         catch (DuplicateSymException dup){
-            System.out.println("caught an DuplicateSymException Error");
+            System.out.println("caught a DuplicateSymException");
         }
+
 
 
 
@@ -49,26 +50,28 @@ public class P1 {
             k = "global_a";
             table.addDecl(k, t);
             //should catch EmptySymTableException
+
         }
         catch(NullPointerException n){
-            System.out.println("caught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
         catch (DuplicateSymException dup){
-            System.out.println("caught an DuplicateSymException Error");
+            System.out.println("caught a DuplicateSymException");
         }
+
 
         try{
             table.lookupLocal(k);
             //should catch EmptySymTableException
         }
         catch(NullPointerException n){
-            System.out.println("caught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
 
 
@@ -84,13 +87,13 @@ public class P1 {
             //should not catch any exception, but found two var with same name with differnt type in different scope
         }
         catch(NullPointerException n){
-            System.out.println("caught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
         catch (DuplicateSymException dup){
-            System.out.println("caught an DuplicateSymException Error");
+            System.out.println("caught a DuplicateSymException");
         }
 
 
@@ -114,13 +117,13 @@ public class P1 {
 
         }
         catch(NullPointerException n){
-            System.out.println("caught an NullPointerException Error");
+            System.out.println("caught a NullPointerException");
         }
         catch (EmptySymTableException emp){
-            System.out.println("caught an EmptySymTableException Error");
+            System.out.println("caught an EmptySymTableException");
         }
         catch (DuplicateSymException dup){
-            System.out.println("caught an DuplicateSymException Error");
+            System.out.println("caught a DuplicateSymException");
         }
 
     }
